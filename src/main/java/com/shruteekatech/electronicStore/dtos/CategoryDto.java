@@ -29,7 +29,7 @@ public class CategoryDto extends BaseEntityDto {
     @Size(min=5,max = 50,message =ValidationConstant.DESCRIPTION_MSG)
     private String description;
 
-    @NotEmpty
+
     @ImageNameValid
     private String coverImage;
 }

@@ -24,14 +24,14 @@ public class GlobalExceptionHandler {
     {
 //        String message = e.getMessage();
 //        ApiResponse apiResponse = new ApiResponse(message, false);
-        ApiResponse apiResponse = ApiResponse.builder().message(e.getMessage()).status(false).build();
+        ApiResponse apiResponse = ApiResponse.builder().message(e.getMessage()).status(HttpStatus.NOT_FOUND).success(false).build();
         return  new ResponseEntity<>(apiResponse, HttpStatus.NOT_FOUND);
 
     }
     @ExceptionHandler(EmailNotFoundException.class)
     public ResponseEntity<ApiResponse> emailnotfoundExceptionhandle(EmailNotFoundException e)
     {
-        ApiResponse apiResponse =ApiResponse.builder().message(e.getMessage()).status(false).build();
+        ApiResponse apiResponse =ApiResponse.builder().message(e.getMessage()).status(HttpStatus.NOT_FOUND).success(false).build();
         return  new ResponseEntity<>(apiResponse, HttpStatus.NOT_FOUND);
 
     }
@@ -56,14 +56,14 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(DataIntegrityViolationException.class)
     public ResponseEntity<ApiResponse> handleMethodargsNotValidException(DataIntegrityViolationException ex)
     {
-        ApiResponse apiResponse = new ApiResponse(AppConstant.EMAIL_MSG, false);
+        ApiResponse apiResponse = new ApiResponse(AppConstant.EMAIL_MSG, false,HttpStatus.NOT_FOUND);
         return  new ResponseEntity<>(apiResponse, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(BadApiException.class)
     public ResponseEntity<ApiResponse> handleBadApiException(BadApiException ex)
     {
-        ApiResponse apiResponse =ApiResponse.builder().message(ex.getMessage()).status(false).build();
+        ApiResponse apiResponse =ApiResponse.builder().message(ex.getMessage()).status(HttpStatus.NOT_FOUND).success(false).build();
 
         return  new ResponseEntity<>(apiResponse, HttpStatus.BAD_REQUEST);
     }

@@ -1,18 +1,24 @@
 package com.shruteekatech.electronicStore.controller;
 
 import com.shruteekatech.electronicStore.constant.AppConstant;
-import com.shruteekatech.electronicStore.dtos.ApiResponse;
-import com.shruteekatech.electronicStore.dtos.CategoryDto;
-import com.shruteekatech.electronicStore.dtos.PagableResponse;
+import com.shruteekatech.electronicStore.dtos.*;
 import com.shruteekatech.electronicStore.service.CategoryService;
+import com.shruteekatech.electronicStore.service.FileService;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 @RestController
@@ -22,6 +28,11 @@ public class CategoryController {
 
     @Autowired
     private CategoryService categoryService;
+
+    @Value("${category.profile.image.path}")
+    private String imageuploadpath;
+    @Autowired
+    private FileService fileService;
 
     @PostMapping("/create")
     public ResponseEntity<CategoryDto> createCategory(@Valid  @RequestBody CategoryDto categoryDto)
@@ -60,7 +71,7 @@ public class CategoryController {
     public ResponseEntity<ApiResponse> deletecategory(@PathVariable Long catid)
     {
         this.categoryService.deleteCategory(catid);
-        ApiResponse apiResponse =ApiResponse.builder().message(AppConstant.DELETE).status(true).build();
+        ApiResponse apiResponse =ApiResponse.builder().message(AppConstant.DELETE).status(HttpStatus.OK).success(true).build();
         return new ResponseEntity<>(apiResponse,HttpStatus.OK);
     }
 
@@ -69,5 +80,29 @@ public class CategoryController {
     {
         List<CategoryDto> searchCategory = this.categoryService.searchCategory(keyword);
         return new ResponseEntity<>(searchCategory,HttpStatus.OK);
+    }
+
+    @PostMapping("/image/{categoryid}/")
+    public ResponseEntity<ImageResponse> uploadImage(@PathVariable Long categoryid, @RequestParam("userimage") MultipartFile file) throws IOException {
+        log.info("Upload the image with categoryid:{}",categoryid);
+        CategoryDto category = this.categoryService.getSingleCategory(categoryid);
+
+        String uploadImage = this.fileService.uploadImage(file, imageuploadpath);
+
+        category.setCoverImage(uploadImage);
+        this.categoryService.updateCategory(category,categoryid);
+
+        ImageResponse imageResponse=ImageResponse.builder().imagename(uploadImage).message("Image Uploaded").status(true).build();
+        log.info("Completed the upload image process",categoryid);
+        return new ResponseEntity<>(imageResponse,HttpStatus.CREATED);
+    }
+    //    To serve the user image
+    @GetMapping("/image/{catid}")
+    public void  serveUserimage(@PathVariable Long catid, HttpServletResponse response) throws IOException {
+
+        CategoryDto category = this.categoryService.getSingleCategory(catid);
+        InputStream resource = this.fileService.getResource(imageuploadpath, category.getCoverImage());
+        response.setContentType(MediaType.IMAGE_PNG_VALUE);
+        StreamUtils.copy(resource,response.getOutputStream());
     }
 }
