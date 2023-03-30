@@ -19,8 +19,8 @@ import java.util.Map;
 @Slf4j
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(UsernotFoundException.class)
-    public ResponseEntity<ApiResponse> usernotfoundExceptionhandle(UsernotFoundException e)
+    @ExceptionHandler(ResourcenotFoundException.class)
+    public ResponseEntity<ApiResponse> usernotfoundExceptionhandle(ResourcenotFoundException e)
     {
 //        String message = e.getMessage();
 //        ApiResponse apiResponse = new ApiResponse(message, false);

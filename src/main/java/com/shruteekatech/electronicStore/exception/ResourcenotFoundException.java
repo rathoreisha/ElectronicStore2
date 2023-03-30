@@ -1,6 +1,6 @@
 package com.shruteekatech.electronicStore.exception;
 
-public class UsernotFoundException extends RuntimeException {
+public class ResourcenotFoundException extends RuntimeException {
 
     /**
      * Constructs a new runtime exception with the specified detail message.
@@ -13,7 +13,7 @@ public class UsernotFoundException extends RuntimeException {
     String resourceName;
     String fieldName;
     long fieldValue;
-    public UsernotFoundException(String resourceName, String fieldName, long fieldValue) {
+    public ResourcenotFoundException(String resourceName, String fieldName, long fieldValue) {
         super(String.format("%s",resourceName,fieldName,fieldValue));
         this.resourceName = resourceName;
         this.fieldName = fieldName;

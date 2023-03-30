@@ -4,7 +4,7 @@ import com.shruteekatech.electronicStore.constant.AppConstant;
 import com.shruteekatech.electronicStore.dtos.CategoryDto;
 import com.shruteekatech.electronicStore.dtos.PagableResponse;
 import com.shruteekatech.electronicStore.entity.Category;
-import com.shruteekatech.electronicStore.exception.UsernotFoundException;
+import com.shruteekatech.electronicStore.exception.ResourcenotFoundException;
 import com.shruteekatech.electronicStore.helper.Pageablemethod;
 import com.shruteekatech.electronicStore.repository.CategoryRepo;
 import com.shruteekatech.electronicStore.service.CategoryService;
@@ -51,7 +51,7 @@ public class CategoryImpl implements CategoryService {
     @Override
     public CategoryDto updateCategory(CategoryDto categorydto, Long catId) {
         log.info("Initiated Dao Call to Update the Category with :{}",catId);
-        Category category = this.categoryRepo.findById(catId).orElseThrow(() -> new UsernotFoundException(AppConstant.CATEGORY, AppConstant.ID, catId));
+        Category category = this.categoryRepo.findById(catId).orElseThrow(() -> new ResourcenotFoundException(AppConstant.CATEGORY, AppConstant.ID, catId));
 
         category.setTitle(categorydto.getTitle());
         category.setDescription(categorydto.getDescription());
@@ -70,7 +70,7 @@ public class CategoryImpl implements CategoryService {
     @Override
     public CategoryDto getSingleCategory(Long catID) {
         log.info("Initiated Dao Call to Get the Category with :{}",catID);
-        Category category = this.categoryRepo.findById(catID).orElseThrow(() -> new UsernotFoundException(AppConstant.CATEGORY, AppConstant.ID, catID));
+        Category category = this.categoryRepo.findById(catID).orElseThrow(() -> new ResourcenotFoundException(AppConstant.CATEGORY, AppConstant.ID, catID));
         log.info("Cpmpleted Dao Call to Get the Category with :{}",catID);
         return this.modelMapper.map(category,CategoryDto.class);
     }
@@ -113,7 +113,7 @@ public class CategoryImpl implements CategoryService {
     public void deleteCategory(Long catid) {
         log.info("Initiated Dao Call to Delete the Category with :{}",catid);
 
-        Category category = this.categoryRepo.findById(catid).orElseThrow(() -> new UsernotFoundException(AppConstant.CATEGORY, AppConstant.ID, catid));
+        Category category = this.categoryRepo.findById(catid).orElseThrow(() -> new ResourcenotFoundException(AppConstant.CATEGORY, AppConstant.ID, catid));
         log.info("Completed Dao Call to Delete the Category with :{}",catid);
         this.categoryRepo.delete(category);
 

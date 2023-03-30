@@ -4,7 +4,7 @@ import com.shruteekatech.electronicStore.constant.AppConstant;
 import com.shruteekatech.electronicStore.dtos.UserDto;
 import com.shruteekatech.electronicStore.entity.User;
 import com.shruteekatech.electronicStore.exception.EmailNotFoundException;
-import com.shruteekatech.electronicStore.exception.UsernotFoundException;
+import com.shruteekatech.electronicStore.exception.ResourcenotFoundException;
 import com.shruteekatech.electronicStore.dtos.PagableResponse;
 import com.shruteekatech.electronicStore.helper.Pageablemethod;
 import com.shruteekatech.electronicStore.repository.UserRepository;
@@ -71,7 +71,7 @@ public class UserServiceimpl implements UserService {
     @Override
     public UserDto updateUser(UserDto userdto, Long userid) {
         log.info("Initiating dao call to update the user data with userId:{}", userid);
-        User user = this.userRepo.findById(userid).orElseThrow(() -> new UsernotFoundException(AppConstant.USER_ID, "With user id", userid));
+        User user = this.userRepo.findById(userid).orElseThrow(() -> new ResourcenotFoundException(AppConstant.USER_ID, "With user id", userid));
 
         user.setName(userdto.getName());
         user.setAbout(userdto.getAbout());
@@ -95,7 +95,7 @@ public class UserServiceimpl implements UserService {
     public void deleteUser(Long userid) {
         log.info("Initiating dao call to delete the user data with userId:{}", userid);
 
-        User user = this.userRepo.findById(userid).orElseThrow(() -> new UsernotFoundException(AppConstant.USER_ID, "With id", userid));
+        User user = this.userRepo.findById(userid).orElseThrow(() -> new ResourcenotFoundException(AppConstant.USER_ID, "With id", userid));
 //        Delete user profile image
 //        abc.png
         String fullpath=imagepath+user.getImageName();
@@ -156,7 +156,7 @@ public class UserServiceimpl implements UserService {
     public UserDto getSingleUser(Long userid) {
         log.info("Initiating dao call to get the single user data with userId:{}", userid);
 
-        User user = this.userRepo.findById(userid).orElseThrow(() -> new UsernotFoundException(AppConstant.USER_ID, AppConstant.WITH_ID, userid));
+        User user = this.userRepo.findById(userid).orElseThrow(() -> new ResourcenotFoundException(AppConstant.USER_ID, AppConstant.WITH_ID, userid));
         UserDto userDto = this.modelMapper.map(user, UserDto.class);
         log.info("Completed dao call to get the single user data with userId:{}", userid);
 
