@@ -71,7 +71,7 @@ public class CategoryImpl implements CategoryService {
     public CategoryDto getSingleCategory(Long catID) {
         log.info("Initiated Dao Call to Get the Category with :{}",catID);
         Category category = this.categoryRepo.findById(catID).orElseThrow(() -> new ResourcenotFoundException(AppConstant.CATEGORY, AppConstant.ID, catID));
-        log.info("Cpmpleted Dao Call to Get the Category with :{}",catID);
+        log.info("Completed Dao Call to Get the Category with :{}",catID);
         return this.modelMapper.map(category,CategoryDto.class);
     }
 

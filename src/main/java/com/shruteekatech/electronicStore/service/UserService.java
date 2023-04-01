@@ -2,7 +2,9 @@ package com.shruteekatech.electronicStore.service;
 
 import com.shruteekatech.electronicStore.dtos.UserDto;
 import com.shruteekatech.electronicStore.dtos.PagableResponse;
+import net.sf.jasperreports.engine.JRException;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 
 public interface UserService {
@@ -30,4 +32,5 @@ public interface UserService {
 
     List<UserDto> searchUsers(String keyword);
 //    other specific user
+ String exportrept(String reportformat) throws FileNotFoundException, JRException;
 }

@@ -10,6 +10,8 @@ import com.shruteekatech.electronicStore.helper.Pageablemethod;
 import com.shruteekatech.electronicStore.repository.UserRepository;
 import com.shruteekatech.electronicStore.service.UserService;
 import lombok.extern.slf4j.Slf4j;
+import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,15 +22,20 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ResourceUtils;
 
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
 import java.util.List;
 
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -206,6 +213,34 @@ public class UserServiceimpl implements UserService {
                 .gender(userDto.getGender())
                 .imageName(userDto.getImageName())
                 .password(userDto.getPassword()).build();
+    }
+
+    @Override
+    public String exportrept(String reportFormat) throws FileNotFoundException, JRException {
+        log.info("Initiating dao call to Genrate the users report with reportformat:{}", reportFormat);
+
+        String path = "F:\\Bikkadit\\ElectronicStore_Project";
+        List<User> userList = this.userRepo.findAll();
+        //load file and compile it
+        File file = ResourceUtils.getFile("classpath:User.jrxml");
+        JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
+        JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(userList);
+        Map<String, Object> parameters = new HashMap<>();
+        parameters.put("createdBy", "Isha Rathore");
+        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
+        if (reportFormat.equalsIgnoreCase("html")) {
+            JasperExportManager.exportReportToHtmlFile(jasperPrint, path + "\\Userdetails.html");
+        }
+        if (reportFormat.equalsIgnoreCase("pdf")) {
+            JasperExportManager.exportReportToPdfFile(jasperPrint, path + "\\Userdetails.pdf");
+        }
+        if (reportFormat.equalsIgnoreCase("xml")) {
+            JasperExportManager.exportReportToXmlFile(jasperPrint,path + "\\Userdetails.xls",true);
+        }
+        log.info("Completed dao call to Genrate the users report with reportformat:{}", reportFormat);
+
+        return "report generated in path : " + path;
+
     }
 
 }

@@ -7,6 +7,7 @@ import com.shruteekatech.electronicStore.dtos.PagableResponse;
 import com.shruteekatech.electronicStore.service.FileService;
 import com.shruteekatech.electronicStore.service.UserService;
 import lombok.extern.slf4j.Slf4j;
+import net.sf.jasperreports.engine.JRException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -185,10 +186,18 @@ public class UserController {
 //    To serve the user image
     @GetMapping("/image/{userId}")
     public void  serveUserimage(@PathVariable Long userId, HttpServletResponse response) throws IOException {
-
+        log.info("initiated request to serve image with userid:{}",userId);
         UserDto user = this.userService.getSingleUser(userId);
         InputStream resource = this.fileService.getResource(imageuploadpath, user.getImageName());
         response.setContentType(MediaType.IMAGE_PNG_VALUE);
         StreamUtils.copy(resource,response.getOutputStream());
+        log.info("Completed request to serve image with userid:{}",userId);
+    }
+
+    @GetMapping("/report/{format}")
+    public String generateReport(@PathVariable String format) throws FileNotFoundException, JRException, JRException, FileNotFoundException {
+        log.info("initiated request to genrate the reports  with Format:{}",format);
+        log.info("completed request to genrate the reports  with Format:{}",format);
+        return this.userService.exportrept(format);
     }
 }
