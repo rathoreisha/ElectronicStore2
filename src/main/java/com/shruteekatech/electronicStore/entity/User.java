@@ -20,6 +20,7 @@ public class User extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+
     @Column(name="user_name")
     private String name;
     @Column(name="user_email",unique = true)
