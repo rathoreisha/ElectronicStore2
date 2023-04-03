@@ -4,7 +4,6 @@ import com.shruteekatech.electronicStore.constant.AppConstant;
 import com.shruteekatech.electronicStore.dtos.*;
 import com.shruteekatech.electronicStore.service.CategoryService;
 import com.shruteekatech.electronicStore.service.FileService;
-import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -37,21 +36,27 @@ public class CategoryController {
     @PostMapping("/create")
     public ResponseEntity<CategoryDto> createCategory(@Valid  @RequestBody CategoryDto categoryDto)
     {
-        CategoryDto category = this.categoryService.createCategory(categoryDto);
 
+        log.info("Initiating request to Create Category");
+        CategoryDto category = this.categoryService.createCategory(categoryDto);
+        log.info("Completed request to Create Category");
         return new ResponseEntity<>(category, HttpStatus.CREATED);
     }
     @PutMapping("/update/{catid}")
     public ResponseEntity<CategoryDto> updateCategory(@Valid @RequestBody CategoryDto categoryDto, @PathVariable Long catid )
     {
+        log.info("Initiating the request to update the Category :{}",catid);
         CategoryDto updateCategory = this.categoryService.updateCategory(categoryDto, catid);
+        log.info("Completed the request to update the Category :{}",catid);
         return new ResponseEntity<>(updateCategory,HttpStatus.CREATED);
     }
 
     @GetMapping("/getsingle/{catid}")
     public ResponseEntity<CategoryDto> getsinglecategory(@PathVariable Long catid)
     {
+        log.info("Initiating the request to Get the Category :{}",catid);
         CategoryDto singleCategory = this.categoryService.getSingleCategory(catid);
+        log.info("Completed the request to Get the Category :{}",catid);
         return new ResponseEntity<>(singleCategory,HttpStatus.OK);
     }
     @GetMapping("/")
@@ -60,31 +65,35 @@ public class CategoryController {
                                                       , @RequestParam(value = "sortBy", defaultValue = "categoryId", required = false) String sortBy,
                                                             @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir)
     {
-        log.info("Initiated request to get all the user details");
+        log.info("Initiated request to get all the Category details");
         PagableResponse<CategoryDto> allcategories = this.categoryService.getAllcategories(pagenumber, pagesize, sortBy, sortDir);
 
-
+        log.info("Completed request to get all the Category details");
         return new ResponseEntity<>(allcategories,HttpStatus.OK);
     }
 
     @DeleteMapping("/{catid}")
     public ResponseEntity<ApiResponse> deletecategory(@PathVariable Long catid)
     {
+        log.info("Initiating the request to delete the Category :{}",catid);
         this.categoryService.deleteCategory(catid);
         ApiResponse apiResponse =ApiResponse.builder().message(AppConstant.DELETE).status(HttpStatus.OK).success(true).build();
+        log.info("Completed the request to update the Category :{}",catid);
         return new ResponseEntity<>(apiResponse,HttpStatus.OK);
     }
 
     @GetMapping("/{keyword}")
     public  ResponseEntity<List<CategoryDto>> searchCategory(@PathVariable String keyword)
     {
+        log.info("Initiating the request to Search the Category :{}",keyword);
         List<CategoryDto> searchCategory = this.categoryService.searchCategory(keyword);
+        log.info("Completed the request to Search the Category :{}",keyword);
         return new ResponseEntity<>(searchCategory,HttpStatus.OK);
     }
 
     @PostMapping("/image/{categoryid}/")
     public ResponseEntity<ImageResponse> uploadImage(@PathVariable Long categoryid, @RequestParam("userimage") MultipartFile file) throws IOException {
-        log.info("Upload the image with categoryid:{}",categoryid);
+        log.info("Initiating the request to Upload the image with categoryid:{}",categoryid);
         CategoryDto category = this.categoryService.getSingleCategory(categoryid);
 
         String uploadImage = this.fileService.uploadImage(file, imageuploadpath);
@@ -93,16 +102,18 @@ public class CategoryController {
         this.categoryService.updateCategory(category,categoryid);
 
         ImageResponse imageResponse=ImageResponse.builder().imagename(uploadImage).message("Image Uploaded").status(true).build();
-        log.info("Completed the upload image process",categoryid);
+        log.info(" Completed the request to upload image process",categoryid);
         return new ResponseEntity<>(imageResponse,HttpStatus.CREATED);
     }
     //    To serve the user image
     @GetMapping("/image/{catid}")
     public void  serveUserimage(@PathVariable Long catid, HttpServletResponse response) throws IOException {
-
+        log.info("Initiating the request to Serve the image with categoryid:{}",catid);
         CategoryDto category = this.categoryService.getSingleCategory(catid);
         InputStream resource = this.fileService.getResource(imageuploadpath, category.getCoverImage());
         response.setContentType(MediaType.IMAGE_PNG_VALUE);
         StreamUtils.copy(resource,response.getOutputStream());
+        log.info("Completed the request to Serve the image with categoryid:{}",catid);
+
     }
 }
