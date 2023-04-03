@@ -62,7 +62,7 @@ public class CategoryController {
     @GetMapping("/")
     public ResponseEntity<PagableResponse> getAllcategories(@RequestParam(value = "pagenumber", defaultValue = "0", required = false) Integer pagenumber,
                                                             @RequestParam(value = "pagesize", defaultValue = "10", required = false) Integer pagesize
-                                                      , @RequestParam(value = "sortBy", defaultValue = "categoryId", required = false) String sortBy,
+                                                          , @RequestParam(value = "sortBy", defaultValue = "categoryId", required = false) String sortBy,
                                                             @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir)
     {
         log.info("Initiated request to get all the Category details");

@@ -11,4 +11,5 @@ public class ValidationConstant {
     public static final String PASSWORD_PATTERN = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{8,}$";
     public static final String TITLE_MSG = "Please Enter More than 5 Charcaters Title";
     public static final String DESCRIPTION_MSG = "Please Enter More than 5 Charcaters Description";
+    public static final String CATEGORY = "Title should not be null or more than 5 characters";
 }

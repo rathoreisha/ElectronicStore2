@@ -15,4 +15,5 @@ public class AppConstant {
 
     public static final String CATEGORY = "Category not Found";
     public static final String ID = "With Id";
+    public static final String PRODUCT = "Product Not Found";
 }

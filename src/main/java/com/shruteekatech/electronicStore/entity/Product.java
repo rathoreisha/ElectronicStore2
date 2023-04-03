@@ -23,8 +23,8 @@ public class Product extends BaseEntity {
     private String description;
     private Double price;
     private Integer quantity;
-    private  boolean live;
-    private boolean stock;
+    private  Boolean live;
+    private Boolean stock;
 
 
 
