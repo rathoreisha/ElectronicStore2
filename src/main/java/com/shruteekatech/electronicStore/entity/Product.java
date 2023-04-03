@@ -1,15 +1,31 @@
 package com.shruteekatech.electronicStore.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import javax.persistence.*;
 
 @Entity
-public class Product {
+@Table(name = "Products")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class Product extends BaseEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long pid;
+    private String title;
 
-    private String pname;
+    private String description;
+    private Double price;
+    private Integer quantity;
+    private  boolean live;
+    private boolean stock;
+
 
 
 }
