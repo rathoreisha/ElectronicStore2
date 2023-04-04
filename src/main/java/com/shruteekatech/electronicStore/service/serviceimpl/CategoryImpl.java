@@ -4,11 +4,14 @@ import com.shruteekatech.electronicStore.constant.AppConstant;
 import com.shruteekatech.electronicStore.dtos.CategoryDto;
 import com.shruteekatech.electronicStore.dtos.PagableResponse;
 import com.shruteekatech.electronicStore.entity.Category;
+import com.shruteekatech.electronicStore.entity.User;
 import com.shruteekatech.electronicStore.exception.ResourcenotFoundException;
 import com.shruteekatech.electronicStore.helper.Pageablemethod;
 import com.shruteekatech.electronicStore.repository.CategoryRepo;
 import com.shruteekatech.electronicStore.service.CategoryService;
 import lombok.extern.slf4j.Slf4j;
+import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -16,8 +19,13 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ResourceUtils;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
@@ -116,6 +124,34 @@ public class CategoryImpl implements CategoryService {
         Category category = this.categoryRepo.findById(catid).orElseThrow(() -> new ResourcenotFoundException(AppConstant.CATEGORY, AppConstant.ID, catid));
         log.info("Completed Dao Call to Delete the Category with :{}",catid);
         this.categoryRepo.delete(category);
+
+    }
+
+    @Override
+    public String exportrept(String reportFormat) throws FileNotFoundException, JRException {
+        log.info("Initiating dao call to Generate the Category report with report format:{}", reportFormat);
+
+        String path = "F:\\Bikkadit\\ElectronicStore_Project";
+        List<Category> categoryRepoAll = this.categoryRepo.findAll();
+        //load file and compile it
+        File file = ResourceUtils.getFile("classpath:Category.jrxml");
+        JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
+        JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(categoryRepoAll);
+        Map<String, Object> parameters = new HashMap<>();
+        parameters.put("createdBy", "Isha Rathore");
+        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
+        if (reportFormat.equalsIgnoreCase("html")) {
+            JasperExportManager.exportReportToHtmlFile(jasperPrint, path + "\\Category.html");
+        }
+        if (reportFormat.equalsIgnoreCase("pdf")) {
+            JasperExportManager.exportReportToPdfFile(jasperPrint, path + "\\Category.pdf");
+        }
+        if (reportFormat.equalsIgnoreCase("xml")) {
+            JasperExportManager.exportReportToXmlFile(jasperPrint,path + "\\Category.xls",true);
+        }
+        log.info("Completed dao call to Generate the users report with report format:{}", reportFormat);
+
+        return "report generated in path : " + path;
 
     }
 }

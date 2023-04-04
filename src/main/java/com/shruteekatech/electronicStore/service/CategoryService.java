@@ -2,7 +2,9 @@ package com.shruteekatech.electronicStore.service;
 
 import com.shruteekatech.electronicStore.dtos.CategoryDto;
 import com.shruteekatech.electronicStore.dtos.PagableResponse;
+import net.sf.jasperreports.engine.JRException;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 
 public interface CategoryService {
@@ -25,4 +27,5 @@ public interface CategoryService {
 //    Delete Category
     void deleteCategory(Long catid);
 
+    String exportrept(String reportformat) throws FileNotFoundException, JRException;
 }

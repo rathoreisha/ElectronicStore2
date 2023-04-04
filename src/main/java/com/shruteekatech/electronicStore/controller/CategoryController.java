@@ -5,6 +5,7 @@ import com.shruteekatech.electronicStore.dtos.*;
 import com.shruteekatech.electronicStore.service.CategoryService;
 import com.shruteekatech.electronicStore.service.FileService;
 import lombok.extern.slf4j.Slf4j;
+import net.sf.jasperreports.engine.JRException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -16,6 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -115,5 +117,12 @@ public class CategoryController {
         StreamUtils.copy(resource,response.getOutputStream());
         log.info("Completed the request to Serve the image with categoryid:{}",catid);
 
+    }
+
+    @GetMapping("/report/{format}")
+    public String generateReport(@PathVariable String format) throws FileNotFoundException, JRException, JRException, FileNotFoundException {
+        log.info("initiated request to genrate the reports  with Format:{}",format);
+        log.info("completed request to genrate the reports  with Format:{}",format);
+        return this.categoryService.exportrept(format);
     }
 }

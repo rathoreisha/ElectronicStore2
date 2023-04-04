@@ -1505,3 +1505,803 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'electronicstore_q
 2023-04-04 01:28:25,474 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9696"]
 2023-04-04 01:28:25,514 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9696 (http) with context path ''
 2023-04-04 01:28:25,535 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ElectronicStoreApplication in 11.671 seconds (JVM running for 13.347)
+2023-04-04 01:51:12,272 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 01:51:12,280 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-04 01:51:12,301 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-04 01:51:31,206 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-04-04 01:51:31,219 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ElectronicStoreApplication using Java 17.0.4 on DESKTOP-HE75IJA with PID 17072 (F:\ElectronicStore_Project\ElectronicStore\target\classes started by Genius Computer in F:\ElectronicStore_Project\ElectronicStore)
+2023-04-04 01:51:31,220 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-04 01:51:31,221 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "qa"
+2023-04-04 01:51:31,414 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-04 01:51:31,416 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-04 01:51:33,364 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-04 01:51:33,557 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 171 ms. Found 3 JPA repository interfaces.
+2023-04-04 01:51:36,636 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9696 (http)
+2023-04-04 01:51:36,665 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9696"]
+2023-04-04 01:51:36,667 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-04 01:51:36,667 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-04 01:51:36,967 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-04 01:51:36,967 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5549 ms
+2023-04-04 01:51:37,456 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 01:51:37,611 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-04 01:51:38,250 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 01:51:39,476 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-04 01:51:40,564 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-04 01:51:40,610 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-04 01:51:42,631 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 01:51:42,647 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 01:51:43,791 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-04 01:51:44,430 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-04 01:51:44,467 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9696"]
+2023-04-04 01:51:44,502 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9696 (http) with context path ''
+2023-04-04 01:51:44,538 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ElectronicStoreApplication in 14.176 seconds (JVM running for 16.061)
+2023-04-04 01:52:18,610 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-04 01:52:18,611 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-04 01:52:18,614 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Completed initialization in 2 ms
+2023-04-04 01:54:05,716 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-5] initiated request to genrate the reports  with Format:pdf
+2023-04-04 01:54:05,720 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-5] completed request to genrate the reports  with Format:pdf
+2023-04-04 01:54:05,720 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-5] Initiating dao call to Generate the Category report with report format:pdf
+2023-04-04 01:54:09,948 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-5] Completed dao call to Generate the users report with report format:pdf
+2023-04-04 01:54:58,660 INFO com.shruteekatech.electronicStore.validation.ImageNameValidator [http-nio-9696-exec-6] Message from isValid : xyz.png 
+2023-04-04 01:54:58,667 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-6] Initiating request to Create Category
+2023-04-04 01:54:58,668 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-6] Initiated Dao Call to save the Category
+2023-04-04 01:54:58,842 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-6] Completed Dao call to save the Category
+2023-04-04 01:54:58,842 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-6] Completed request to Create Category
+2023-04-04 01:55:06,518 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-7] Initiating the request to Get the Category :1
+2023-04-04 01:55:06,518 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-7] Initiated Dao Call to Get the Category with :1
+2023-04-04 01:55:06,589 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-7] Completed Dao Call to Get the Category with :1
+2023-04-04 01:55:06,590 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-7] Completed the request to Get the Category :1
+2023-04-04 01:55:17,386 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-8] initiated request to genrate the reports  with Format:pdf
+2023-04-04 01:55:17,387 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-8] completed request to genrate the reports  with Format:pdf
+2023-04-04 01:55:17,388 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-8] Initiating dao call to Generate the Category report with report format:pdf
+2023-04-04 01:55:18,044 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.sf.jasperreports.engine.JRException: Byte data not found at: cherry.jpg.] with root cause
+net.sf.jasperreports.engine.JRException: Byte data not found at: cherry.jpg.
+	at net.sf.jasperreports.repo.RepositoryUtil.getBytesFromLocation(RepositoryUtil.java:215)
+	at net.sf.jasperreports.renderers.util.RendererUtil.getNonLazyRenderable(RendererUtil.java:179)
+	at net.sf.jasperreports.engine.fill.JRFillImage.evaluateImage(JRFillImage.java:515)
+	at net.sf.jasperreports.engine.fill.JRFillImage.evaluate(JRFillImage.java:440)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:383)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:548)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillTitle(JRVerticalFiller.java:323)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:256)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:110)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:615)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:433)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:162)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:145)
+	at net.sf.jasperreports.engine.JasperFillManager.fill(JasperFillManager.java:758)
+	at net.sf.jasperreports.engine.JasperFillManager.fillReport(JasperFillManager.java:1074)
+	at com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl.exportrept(CategoryImpl.java:142)
+	at com.shruteekatech.electronicStore.controller.CategoryController.generateReport(CategoryController.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-04 01:57:42,576 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 01:57:42,583 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-04 01:57:42,608 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-04 01:57:50,663 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-04-04 01:57:50,674 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ElectronicStoreApplication using Java 17.0.4 on DESKTOP-HE75IJA with PID 12580 (F:\ElectronicStore_Project\ElectronicStore\target\classes started by Genius Computer in F:\ElectronicStore_Project\ElectronicStore)
+2023-04-04 01:57:50,675 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-04 01:57:50,677 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "qa"
+2023-04-04 01:57:50,868 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-04 01:57:50,868 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-04 01:57:53,240 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-04 01:57:53,415 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 146 ms. Found 3 JPA repository interfaces.
+2023-04-04 01:57:55,791 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9696 (http)
+2023-04-04 01:57:55,856 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9696"]
+2023-04-04 01:57:55,857 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-04 01:57:55,858 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-04 01:57:56,441 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-04 01:57:56,442 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5571 ms
+2023-04-04 01:57:56,926 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 01:57:57,088 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-04 01:57:57,627 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 01:57:57,926 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-04 01:57:58,824 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-04 01:57:58,868 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-04 01:58:00,813 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 01:58:00,830 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 01:58:02,053 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-04 01:58:02,785 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-04 01:58:02,813 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9696"]
+2023-04-04 01:58:02,858 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9696 (http) with context path ''
+2023-04-04 01:58:02,881 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ElectronicStoreApplication in 13.059 seconds (JVM running for 14.634)
+2023-04-04 01:58:08,774 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-04 01:58:08,775 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-04 01:58:08,777 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Completed initialization in 2 ms
+2023-04-04 01:58:08,869 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-1] initiated request to genrate the reports  with Format:pdf
+2023-04-04 01:58:08,870 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-1] completed request to genrate the reports  with Format:pdf
+2023-04-04 01:58:08,870 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-1] Initiating dao call to Generate the Category report with report format:pdf
+2023-04-04 01:58:12,594 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.sf.jasperreports.engine.JRException: Byte data not found at: logoshruttekatech.png.] with root cause
+net.sf.jasperreports.engine.JRException: Byte data not found at: logoshruttekatech.png.
+	at net.sf.jasperreports.repo.RepositoryUtil.getBytesFromLocation(RepositoryUtil.java:215)
+	at net.sf.jasperreports.renderers.util.RendererUtil.getNonLazyRenderable(RendererUtil.java:179)
+	at net.sf.jasperreports.engine.fill.JRFillImage.evaluateImage(JRFillImage.java:515)
+	at net.sf.jasperreports.engine.fill.JRFillImage.evaluate(JRFillImage.java:440)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:383)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:548)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillTitle(JRVerticalFiller.java:323)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:256)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:110)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:615)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:433)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:162)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:145)
+	at net.sf.jasperreports.engine.JasperFillManager.fill(JasperFillManager.java:758)
+	at net.sf.jasperreports.engine.JasperFillManager.fillReport(JasperFillManager.java:1074)
+	at com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl.exportrept(CategoryImpl.java:142)
+	at com.shruteekatech.electronicStore.controller.CategoryController.generateReport(CategoryController.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-04 01:58:55,659 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 01:58:55,664 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-04 01:58:55,680 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-04 01:59:02,335 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-04-04 01:59:02,341 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ElectronicStoreApplication using Java 17.0.4 on DESKTOP-HE75IJA with PID 16520 (F:\ElectronicStore_Project\ElectronicStore\target\classes started by Genius Computer in F:\ElectronicStore_Project\ElectronicStore)
+2023-04-04 01:59:02,343 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-04 01:59:02,344 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "qa"
+2023-04-04 01:59:02,517 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-04 01:59:02,518 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-04 01:59:04,447 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-04 01:59:04,646 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 170 ms. Found 3 JPA repository interfaces.
+2023-04-04 01:59:07,153 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9696 (http)
+2023-04-04 01:59:07,178 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9696"]
+2023-04-04 01:59:07,179 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-04 01:59:07,180 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-04 01:59:07,483 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-04 01:59:07,484 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4964 ms
+2023-04-04 01:59:08,158 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 01:59:08,363 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-04 01:59:09,062 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 01:59:09,341 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-04 01:59:10,040 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-04 01:59:10,082 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-04 01:59:12,342 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 01:59:12,386 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 01:59:14,202 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-04 01:59:15,279 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-04 01:59:15,318 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9696"]
+2023-04-04 01:59:15,371 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9696 (http) with context path ''
+2023-04-04 01:59:15,402 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ElectronicStoreApplication in 13.913 seconds (JVM running for 15.724)
+2023-04-04 01:59:18,930 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-04 01:59:18,930 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-04 01:59:18,935 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Completed initialization in 4 ms
+2023-04-04 01:59:19,021 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-1] initiated request to genrate the reports  with Format:pdf
+2023-04-04 01:59:19,022 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-1] completed request to genrate the reports  with Format:pdf
+2023-04-04 01:59:19,024 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-1] Initiating dao call to Generate the Category report with report format:pdf
+2023-04-04 01:59:22,391 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.sf.jasperreports.engine.fill.JRExpressionEvalException: Error evaluating expression for source text: $F{categoryId}] with root cause
+java.lang.ClassCastException: class java.lang.Long cannot be cast to class java.lang.Integer (java.lang.Long and java.lang.Integer are in module java.base of loader 'bootstrap')
+	at Category_1680553761056_135914.evaluate(Category_1680553761056_135914:185)
+	at net.sf.jasperreports.engine.fill.JREvaluator.evaluate(JREvaluator.java:302)
+	at net.sf.jasperreports.engine.fill.JRCalculator.evaluate(JRCalculator.java:672)
+	at net.sf.jasperreports.engine.fill.JRCalculator.evaluate(JRCalculator.java:640)
+	at net.sf.jasperreports.engine.fill.JRFillElement.evaluateExpression(JRFillElement.java:1169)
+	at net.sf.jasperreports.engine.fill.JRFillTextField.evaluateText(JRFillTextField.java:527)
+	at net.sf.jasperreports.engine.fill.JRFillTextField.evaluate(JRFillTextField.java:512)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:383)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:159)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:383)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:548)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2583)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:813)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:264)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:110)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:615)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:433)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:162)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:145)
+	at net.sf.jasperreports.engine.JasperFillManager.fill(JasperFillManager.java:758)
+	at net.sf.jasperreports.engine.JasperFillManager.fillReport(JasperFillManager.java:1074)
+	at com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl.exportrept(CategoryImpl.java:142)
+	at com.shruteekatech.electronicStore.controller.CategoryController.generateReport(CategoryController.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-04 02:01:10,958 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 02:01:10,965 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-04 02:01:10,985 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-04 02:01:17,674 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ElectronicStoreApplication using Java 17.0.4 on DESKTOP-HE75IJA with PID 8736 (F:\ElectronicStore_Project\ElectronicStore\target\classes started by Genius Computer in F:\ElectronicStore_Project\ElectronicStore)
+2023-04-04 02:01:17,676 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-04-04 02:01:17,681 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-04 02:01:17,687 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "qa"
+2023-04-04 02:01:17,912 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-04 02:01:17,916 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-04 02:01:19,986 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-04 02:01:20,131 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 130 ms. Found 3 JPA repository interfaces.
+2023-04-04 02:01:21,990 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9696 (http)
+2023-04-04 02:01:22,015 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9696"]
+2023-04-04 02:01:22,017 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-04 02:01:22,017 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-04 02:01:22,305 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-04 02:01:22,306 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4377 ms
+2023-04-04 02:01:22,683 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 02:01:22,819 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-04 02:01:23,248 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 02:01:23,627 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-04 02:01:24,431 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-04 02:01:24,463 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-04 02:01:26,719 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 02:01:26,751 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 02:01:28,507 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-04 02:01:29,544 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-04 02:01:29,590 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9696"]
+2023-04-04 02:01:29,633 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9696 (http) with context path ''
+2023-04-04 02:01:29,665 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ElectronicStoreApplication in 13.005 seconds (JVM running for 14.874)
+2023-04-04 02:01:33,849 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-04 02:01:33,851 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-04-04 02:01:33,855 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-2] Completed initialization in 3 ms
+2023-04-04 02:01:33,942 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-2] initiated request to genrate the reports  with Format:pdf
+2023-04-04 02:01:33,942 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-2] completed request to genrate the reports  with Format:pdf
+2023-04-04 02:01:33,943 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-2] Initiating dao call to Generate the Category report with report format:pdf
+2023-04-04 02:01:36,949 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.sf.jasperreports.engine.fill.JRExpressionEvalException: Error evaluating expression for source text: $F{categoryId}] with root cause
+java.lang.ClassCastException: class java.lang.Long cannot be cast to class java.lang.Integer (java.lang.Long and java.lang.Integer are in module java.base of loader 'bootstrap')
+	at Category_1680553895511_143183.evaluate(Category_1680553895511_143183:185)
+	at net.sf.jasperreports.engine.fill.JREvaluator.evaluate(JREvaluator.java:302)
+	at net.sf.jasperreports.engine.fill.JRCalculator.evaluate(JRCalculator.java:672)
+	at net.sf.jasperreports.engine.fill.JRCalculator.evaluate(JRCalculator.java:640)
+	at net.sf.jasperreports.engine.fill.JRFillElement.evaluateExpression(JRFillElement.java:1169)
+	at net.sf.jasperreports.engine.fill.JRFillTextField.evaluateText(JRFillTextField.java:527)
+	at net.sf.jasperreports.engine.fill.JRFillTextField.evaluate(JRFillTextField.java:512)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:383)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:159)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:383)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:548)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2583)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:813)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:264)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:110)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:615)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:433)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:162)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:145)
+	at net.sf.jasperreports.engine.JasperFillManager.fill(JasperFillManager.java:758)
+	at net.sf.jasperreports.engine.JasperFillManager.fillReport(JasperFillManager.java:1074)
+	at com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl.exportrept(CategoryImpl.java:142)
+	at com.shruteekatech.electronicStore.controller.CategoryController.generateReport(CategoryController.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-04 02:05:39,990 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 02:05:40,008 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-04 02:05:40,030 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-04 02:05:46,245 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-04-04 02:05:46,254 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ElectronicStoreApplication using Java 17.0.4 on DESKTOP-HE75IJA with PID 2448 (F:\ElectronicStore_Project\ElectronicStore\target\classes started by Genius Computer in F:\ElectronicStore_Project\ElectronicStore)
+2023-04-04 02:05:46,255 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-04 02:05:46,257 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "qa"
+2023-04-04 02:05:46,436 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-04 02:05:46,438 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-04 02:05:48,254 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-04 02:05:48,401 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 126 ms. Found 3 JPA repository interfaces.
+2023-04-04 02:05:50,221 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9696 (http)
+2023-04-04 02:05:50,243 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9696"]
+2023-04-04 02:05:50,245 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-04 02:05:50,245 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-04 02:05:50,517 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-04 02:05:50,518 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4077 ms
+2023-04-04 02:05:50,847 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 02:05:50,966 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-04 02:05:51,324 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 02:05:51,575 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-04 02:05:52,158 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-04 02:05:52,182 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-04 02:05:53,715 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 02:05:53,737 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 02:05:55,058 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-04 02:05:55,696 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-04 02:05:55,716 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9696"]
+2023-04-04 02:05:55,748 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9696 (http) with context path ''
+2023-04-04 02:05:55,768 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ElectronicStoreApplication in 10.351 seconds (JVM running for 11.957)
+2023-04-04 02:06:01,838 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-04 02:06:01,839 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-04 02:06:01,842 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Completed initialization in 3 ms
+2023-04-04 02:06:01,905 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-1] initiated request to genrate the reports  with Format:pdf
+2023-04-04 02:06:01,906 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-1] completed request to genrate the reports  with Format:pdf
+2023-04-04 02:06:01,906 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-1] Initiating dao call to Generate the Category report with report format:pdf
+2023-04-04 02:06:04,880 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-1] Completed dao call to Generate the users report with report format:pdf
+2023-04-04 02:07:14,861 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 02:07:14,881 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-04 02:07:14,902 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-04 02:07:20,504 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-04-04 02:07:20,509 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ElectronicStoreApplication using Java 17.0.4 on DESKTOP-HE75IJA with PID 12528 (F:\ElectronicStore_Project\ElectronicStore\target\classes started by Genius Computer in F:\ElectronicStore_Project\ElectronicStore)
+2023-04-04 02:07:20,510 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-04 02:07:20,511 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "qa"
+2023-04-04 02:07:20,685 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-04 02:07:20,686 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-04 02:07:22,738 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-04 02:07:22,878 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 117 ms. Found 3 JPA repository interfaces.
+2023-04-04 02:07:24,473 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9696 (http)
+2023-04-04 02:07:24,504 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9696"]
+2023-04-04 02:07:24,505 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-04 02:07:24,506 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-04 02:07:24,751 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-04 02:07:24,752 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4064 ms
+2023-04-04 02:07:25,087 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 02:07:25,188 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-04 02:07:25,576 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 02:07:25,771 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-04 02:07:26,380 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-04 02:07:26,406 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-04 02:07:27,963 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 02:07:27,981 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 02:07:28,992 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-04 02:07:29,630 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-04 02:07:29,650 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9696"]
+2023-04-04 02:07:29,708 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9696 (http) with context path ''
+2023-04-04 02:07:29,750 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ElectronicStoreApplication in 10.036 seconds (JVM running for 11.4)
+2023-04-04 02:07:35,010 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-04 02:07:35,010 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-04 02:07:35,012 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Completed initialization in 1 ms
+2023-04-04 02:07:35,112 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-1] initiated request to genrate the reports  with Format:pdf
+2023-04-04 02:07:35,112 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-1] completed request to genrate the reports  with Format:pdf
+2023-04-04 02:07:35,113 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-1] Initiating dao call to Generate the Category report with report format:pdf
+2023-04-04 02:07:37,904 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.sf.jasperreports.engine.JRException: Byte data not found at: logoshruttekatech.png.] with root cause
+net.sf.jasperreports.engine.JRException: Byte data not found at: logoshruttekatech.png.
+	at net.sf.jasperreports.repo.RepositoryUtil.getBytesFromLocation(RepositoryUtil.java:215)
+	at net.sf.jasperreports.renderers.util.RendererUtil.getNonLazyRenderable(RendererUtil.java:179)
+	at net.sf.jasperreports.engine.fill.JRFillImage.evaluateImage(JRFillImage.java:515)
+	at net.sf.jasperreports.engine.fill.JRFillImage.evaluate(JRFillImage.java:440)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:383)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:548)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillTitle(JRVerticalFiller.java:323)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:256)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:110)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:615)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:433)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:162)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:145)
+	at net.sf.jasperreports.engine.JasperFillManager.fill(JasperFillManager.java:758)
+	at net.sf.jasperreports.engine.JasperFillManager.fillReport(JasperFillManager.java:1074)
+	at com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl.exportrept(CategoryImpl.java:142)
+	at com.shruteekatech.electronicStore.controller.CategoryController.generateReport(CategoryController.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-04 02:12:33,272 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 02:12:33,280 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-04 02:12:33,300 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-04 02:12:39,215 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-04-04 02:12:39,223 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ElectronicStoreApplication using Java 17.0.4 on DESKTOP-HE75IJA with PID 9884 (F:\ElectronicStore_Project\ElectronicStore\target\classes started by Genius Computer in F:\ElectronicStore_Project\ElectronicStore)
+2023-04-04 02:12:39,224 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-04 02:12:39,225 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "qa"
+2023-04-04 02:12:39,430 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-04 02:12:39,430 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-04 02:12:41,338 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-04 02:12:41,495 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 136 ms. Found 3 JPA repository interfaces.
+2023-04-04 02:12:43,371 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9696 (http)
+2023-04-04 02:12:43,408 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9696"]
+2023-04-04 02:12:43,410 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-04 02:12:43,410 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-04 02:12:43,708 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-04 02:12:43,709 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4277 ms
+2023-04-04 02:12:44,146 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 02:12:44,272 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-04 02:12:44,690 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 02:12:44,928 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-04 02:12:45,905 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-04 02:12:45,950 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-04 02:12:48,390 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 02:12:48,427 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 02:12:49,310 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-04 02:12:49,836 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-04 02:12:49,856 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9696"]
+2023-04-04 02:12:49,891 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9696 (http) with context path ''
+2023-04-04 02:12:49,911 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ElectronicStoreApplication in 11.451 seconds (JVM running for 12.87)
+2023-04-04 02:13:39,093 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-04 02:13:39,093 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-04 02:13:39,095 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Completed initialization in 1 ms
+2023-04-04 02:13:39,170 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-1] initiated request to genrate the reports  with Format:pdf
+2023-04-04 02:13:39,171 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-1] completed request to genrate the reports  with Format:pdf
+2023-04-04 02:13:39,171 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-1] Initiating dao call to Generate the Category report with report format:pdf
+2023-04-04 02:13:42,068 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.sf.jasperreports.engine.JRException: Byte data not found at: logoshruttekatech.png.] with root cause
+net.sf.jasperreports.engine.JRException: Byte data not found at: logoshruttekatech.png.
+	at net.sf.jasperreports.repo.RepositoryUtil.getBytesFromLocation(RepositoryUtil.java:215)
+	at net.sf.jasperreports.renderers.util.RendererUtil.getNonLazyRenderable(RendererUtil.java:179)
+	at net.sf.jasperreports.engine.fill.JRFillImage.evaluateImage(JRFillImage.java:515)
+	at net.sf.jasperreports.engine.fill.JRFillImage.evaluate(JRFillImage.java:440)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:383)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:548)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillTitle(JRVerticalFiller.java:323)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:256)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:110)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:615)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:433)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:162)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:145)
+	at net.sf.jasperreports.engine.JasperFillManager.fill(JasperFillManager.java:758)
+	at net.sf.jasperreports.engine.JasperFillManager.fillReport(JasperFillManager.java:1074)
+	at com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl.exportrept(CategoryImpl.java:142)
+	at com.shruteekatech.electronicStore.controller.CategoryController.generateReport(CategoryController.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-04 02:14:18,471 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 02:14:18,477 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-04 02:14:18,495 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-04 02:14:24,729 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-04-04 02:14:24,740 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ElectronicStoreApplication using Java 17.0.4 on DESKTOP-HE75IJA with PID 16696 (F:\ElectronicStore_Project\ElectronicStore\target\classes started by Genius Computer in F:\ElectronicStore_Project\ElectronicStore)
+2023-04-04 02:14:24,762 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-04 02:14:24,764 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "qa"
+2023-04-04 02:14:24,926 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-04 02:14:24,927 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-04 02:14:26,714 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-04 02:14:26,856 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 121 ms. Found 3 JPA repository interfaces.
+2023-04-04 02:14:28,487 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9696 (http)
+2023-04-04 02:14:28,510 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9696"]
+2023-04-04 02:14:28,512 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-04 02:14:28,512 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-04 02:14:28,742 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-04 02:14:28,744 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3812 ms
+2023-04-04 02:14:29,038 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 02:14:29,117 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-04 02:14:29,415 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 02:14:29,584 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-04 02:14:30,179 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-04 02:14:30,206 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-04 02:14:32,078 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 02:14:32,098 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 02:14:33,352 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-04 02:14:34,172 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-04 02:14:34,211 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9696"]
+2023-04-04 02:14:34,258 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9696 (http) with context path ''
+2023-04-04 02:14:34,289 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ElectronicStoreApplication in 10.317 seconds (JVM running for 11.832)
+2023-04-04 02:14:44,062 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-04 02:14:44,062 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-04 02:14:44,064 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Completed initialization in 2 ms
+2023-04-04 02:14:44,128 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-1] initiated request to genrate the reports  with Format:pdf
+2023-04-04 02:14:44,128 INFO com.shruteekatech.electronicStore.controller.CategoryController [http-nio-9696-exec-1] completed request to genrate the reports  with Format:pdf
+2023-04-04 02:14:44,129 INFO com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl [http-nio-9696-exec-1] Initiating dao call to Generate the Category report with report format:pdf
+2023-04-04 02:14:46,603 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.sf.jasperreports.engine.JRException: Byte data not found at: Downloads/logoshruttekatech.png.] with root cause
+net.sf.jasperreports.engine.JRException: Byte data not found at: Downloads/logoshruttekatech.png.
+	at net.sf.jasperreports.repo.RepositoryUtil.getBytesFromLocation(RepositoryUtil.java:215)
+	at net.sf.jasperreports.renderers.util.RendererUtil.getNonLazyRenderable(RendererUtil.java:179)
+	at net.sf.jasperreports.engine.fill.JRFillImage.evaluateImage(JRFillImage.java:515)
+	at net.sf.jasperreports.engine.fill.JRFillImage.evaluate(JRFillImage.java:440)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:383)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:548)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillTitle(JRVerticalFiller.java:323)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:256)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:110)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:615)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:433)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:162)
+	at net.sf.jasperreports.engine.fill.JRFiller.fill(JRFiller.java:145)
+	at net.sf.jasperreports.engine.JasperFillManager.fill(JasperFillManager.java:758)
+	at net.sf.jasperreports.engine.JasperFillManager.fillReport(JasperFillManager.java:1074)
+	at com.shruteekatech.electronicStore.service.serviceimpl.CategoryImpl.exportrept(CategoryImpl.java:142)
+	at com.shruteekatech.electronicStore.controller.CategoryController.generateReport(CategoryController.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-04 02:15:07,714 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 02:15:07,721 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-04 02:15:07,734 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
