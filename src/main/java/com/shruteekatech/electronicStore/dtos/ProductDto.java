@@ -31,4 +31,10 @@ public class ProductDto extends BaseEntityDto {
     private  Boolean live;
     @AssertTrue
     private Boolean stock;
+
+    @NotEmpty
+    private String discount;
+
+    @NotEmpty
+    private String brand;
 }
