@@ -28,7 +28,7 @@
     </background>
     <title>
         <band height="102" splitType="Stretch">
-            <<!--image>
+            <!--image>
                 <reportElement x="725" y="0" width="77" height="102" />
                 <imageExpression><![CDATA["Downloads/logoshruttekatech.png"]]></imageExpression>
             </image>-->
